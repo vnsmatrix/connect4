@@ -1,0 +1,105 @@
+* {
+      font-family: garamond;
+      font-weight: lighter;
+      box-sizing: border;
+}
+
+
+body {
+    background-image: url("milky.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 24px;
+    color: pink;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: turquoise;
+    text-align: center;
+}
+
+.hover {
+    background-color: pink;
+
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+#grid {
+    display: block;
+    width: 740px;
+    height: 630px;
+    background-color: white;
+    opacity: 0.9;
+    border: 5px dotted pink;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+
+
+.column {
+    display: inline-block;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.slot div {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 3px 3px;
+}
+
+.slot.unicorn div{
+    background-color: skyblue;
+    background-image: url("unicorn.jpg")
+}
+
+.slot.kitty div{
+    background-color: pink;
+    background-image: url("kitty.jpg")
+}
+
+
+.unicornPointer {
+    background-image: url("unicorn.jpg");
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0.9;
+
+}
+
+.kittyPointer {
+    background-image: url("kitty.jpg");
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0.9;
+
+}
+
+
+.highlight {
+    border-radius: 50%;
+    /* border: 1px solid pink; */
+    transform: rotateX(150deg);
+    transition-duration: 0.5s;
+}
